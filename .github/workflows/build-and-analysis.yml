@@ -49,7 +49,7 @@ jobs:
           SONAR_ORGANIZATION: "testorgapalau"
           SONAR_PROJECT_KEY: "TestOrgAPalau_gradle-example"
         run: |
-          ./gradlew build test jacocoTestReport sonar \
+          ./gradlew build test jacocoTestReport sonar --info \
             -Dsonar.projectKey=$SONAR_PROJECT_KEY \
             -Dsonar.organization=$SONAR_ORGANIZATION \
             -Dsonar.host.url=https://sonarcloud.io
